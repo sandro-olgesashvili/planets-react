@@ -9,7 +9,6 @@
 
 /* image size */
 
-
 .size-Venus {
   width: 400px;
   height: 400px;
@@ -282,6 +281,22 @@
   top: 67%;
   display: flex;
 }
+.planet-basic-info-single span {
+  opacity: 0.5;
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.7272727489471436px;
+  text-align: left;
+  font-family: "League Spartan";
+  text-transform: uppercase;
+}
+
+.planet-basic-info-single h2 {
+  margin-top: 4px;
+}
+
+
 
 .planet-basic-info {
   display: flex;
@@ -297,4 +312,136 @@
   padding-left: 23px;
   padding-bottom: 27px;
   border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 32px 0 27px 0;
+    max-width: 768px;
+  }
+  .planet-cotainer {
+    max-width: 768px;
+  }
+
+  .header-logo {
+    padding: 0 0 39px 0;
+  }
+  .planet-images {
+    padding-bottom: 130px;
+  }
+
+  .header-navbar-li:last-child {
+    padding: 0;
+  }
+  .planet-sum {
+    flex-direction: column;
+    padding-inline: 39px;
+    margin-bottom: 27px;
+  }
+  .planet-info {
+    display: flex;
+    gap: 69px;
+    align-items: center;
+  }
+  .planet-info-tablet {
+    display: flex;
+    flex-direction: column;
+  }
+  .planet-info-title {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 62px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  .planet-btn {
+    width: 281px;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 1.9285714626312256px;
+    text-align: left;
+    padding: 8px 0 7px 20px;
+  }
+  .planet-btn span {
+    margin-right: 17px;
+  }
+  .planet-info-content {
+    margin-bottom: 32px;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    width: 339px;
+  }
+  .planet-info-wiki-span {
+    font-size: 12px;
+  }
+  .planet-info-wiki {
+    font-size: 12px;
+  }
+  .planet-basic-info {
+    padding-inline: 39px;
+  }
+  .planet-basic-info-single {
+    padding: 16px 0px 19px 15px;
+    width: 164px;
+  }
+  .planet-basic-info-single span {
+    font-size: 8px;
+    opacity: 0.5;
+    margin-bottom: 6px;
+  }
+  .planet-basic-info-single h2 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: -0.8999999761581421px;
+    text-align: left;
+    margin-top: 6px;
+  }
+  .size-Venus {
+    width: 253px;
+    height: 253px;
+  }
+
+  .size-Earth {
+    width: 285px;
+    height: 285px;
+  }
+
+  .size-Mars {
+    width: 213px;
+    height: 213px;
+  }
+
+  .size-Jupiter {
+    width: 369px;
+    height: 369px;
+  }
+
+  .size-Saturn {
+    width: 300px;
+    height: 300px;
+  }
+
+  .size-Uranus {
+    width: 290px;
+    height: 290px;
+  }
+
+  .size-Neptune {
+    width: 285px;
+    height: 285px;
+  }
+  .planet-image {
+    width: 184px;
+    height: 184px;
+  }
+
+  .planet-image-s {
+    top: 50%;
+  }
 }

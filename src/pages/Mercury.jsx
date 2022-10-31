@@ -44,8 +44,9 @@ const Mercury = ({ dataMercury }) => {
         </div>
 
         <div className="planet-info">
-          <h1 className="planet-info-title">{dataMercury.name}</h1>
-          <p className="planet-info-content">{overview}</p>
+          <div className="planet-info-tablet">
+            <h1 className="planet-info-title">{dataMercury.name}</h1>
+            <p className="planet-info-content">{overview}</p>
           <div className="planet-info-wiki-container">
             <span className="planet-info-wiki-span">Source : &nbsp;</span>
             <a
@@ -57,6 +58,7 @@ const Mercury = ({ dataMercury }) => {
               Wikipedia
             </a>
             <img src={iconsource} alt="iconsource" width="12px" height="12px" />
+          </div>
           </div>
           <div className="planet-btns">
             <button

@@ -24,7 +24,8 @@ const Planet = ({ dataPlanets }) => {
     setOverwiew(mainData.overview.content);
     setWikiLink(mainData.overview.source);
     setImageSetter(planetmercury);
-    setImageOn(false)
+    setImageOn(false);
+    console.log("11");
   }, [mainData]);
 
   const imageChanger = (item) => {
@@ -53,15 +54,20 @@ const Planet = ({ dataPlanets }) => {
     <section className="planet-cotainer">
       <div className="planet-sum">
         <div className="planet-images">
-          <img src={imageSetter} alt="planet" className={`size-${mainData.name}`} />
+          <img
+            src={imageSetter}
+            alt="planet"
+            className={`size-${mainData.name}`}
+          />
           {imageOn && (
             <img src={geologymercury} alt="planet" className="planet-image-s" />
           )}
         </div>
 
         <div className="planet-info">
-          <h1 className="planet-info-title">{mainData.name}</h1>
-          <p className="planet-info-content">{overview}</p>
+          <div className="planet-info-tablet">
+            <h1 className="planet-info-title">{mainData.name}</h1>
+            <p className="planet-info-content">{overview}</p>
           <div className="planet-info-wiki-container">
             <span className="planet-info-wiki-span">Source : &nbsp;</span>
             <a
@@ -73,6 +79,7 @@ const Planet = ({ dataPlanets }) => {
               Wikipedia
             </a>
             <img src={iconsource} alt="iconsource" width="12px" height="12px" />
+          </div>
           </div>
           <div className="planet-btns">
             <button
