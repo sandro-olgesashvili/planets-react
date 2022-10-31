@@ -1,9 +1,23 @@
 import { NavLink } from "react-router-dom";
+import menuLogo from "../assets/icon-hamburger.svg";
 
-const Header = () => {
+const Header = ({setMobileOn, mobileOn}) => {
+
+
   return (
-    <header className="header">
-      <h1 className="header-logo"><NavLink to="/">THE PLANETS</NavLink></h1>
+    <header className="header" style={{ position: "relative" }}>
+      <h1 className="header-logo">
+        <NavLink to="/">THE PLANETS</NavLink>
+      </h1>
+      <button
+        className="hamburger-btn"
+        style={{opacity: mobileOn ? "0.2": "1"}}
+        onClick={() => {
+          setMobileOn((prev) => !prev);
+        }}
+      >
+        <img src={menuLogo} alt="logo" className="hamburger-menu" />
+      </button>
       <nav className="header-navbar">
         <ul className="header-navbar-ul">
           <li className="header-navbar-li mercury-line">
